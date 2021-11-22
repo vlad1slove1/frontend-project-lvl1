@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Frist frontend project folder",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "main": "index.js",
   "type": "module",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/vlad1slove1/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/vlad1slove1/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/vlad1slove1/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
