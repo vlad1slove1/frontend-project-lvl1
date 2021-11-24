@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import logic from '../src/cli';
+import greetings from '../src/cli.js';
 
-logic();
+greetings();
