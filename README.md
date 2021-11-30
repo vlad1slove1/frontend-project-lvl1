@@ -5,4 +5,4 @@
 
 [![Node CI](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-https://asciinema.org/a/452093sss
+https://asciinema.org/a/452093
