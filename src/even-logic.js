@@ -1,12 +1,8 @@
 import readlineSync from 'readline-sync';
+import userName from './index.js';
 
 const rounds = 3;
 
-console.log('Welcome to the Brain Games!');
-// Start
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`);
-// Greetings
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 // Pronounce the rules
 
