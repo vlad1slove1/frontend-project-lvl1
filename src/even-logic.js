@@ -27,7 +27,7 @@ const checkEven = () => {
       }
     }
 
-    if (number % 2 !== 0 || number === 1) {
+    if (number % 2 !== 0) {
       if (askAnswer === 'no') {
         console.log('Correct!');
       } else {
