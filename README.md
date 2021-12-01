@@ -5,4 +5,5 @@
 
 [![Node CI](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-https://asciinema.org/a/452093
+https://asciinema.org/a/452093 (brain-even)
+https://asciinema.org/a/453000 (brain-calc)
