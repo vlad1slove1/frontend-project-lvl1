@@ -16,4 +16,5 @@ make install
 https://asciinema.org/a/452093 (brain-even)
 https://asciinema.org/a/453000 (brain-calc)
 https://asciinema.org/a/453313 (brain-gcd)
+https://asciinema.org/a/454099 (brain-progressions)
 ```
