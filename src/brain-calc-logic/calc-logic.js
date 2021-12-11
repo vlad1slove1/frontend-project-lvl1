@@ -1,47 +1,33 @@
-import readlineSync from 'readline-sync';
-import userName from '../greetings.js';
+import basement from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rounds = 3;
-// edit rounds count
+const gameRules = 'What is the result of the expression?';
 
-console.log('What is the result of the expression?');
-// pronounce the rules
+const operations = ['+', '-', '*'];
 
-const calculateIt = () => {
-  for (let i = 1; i <= rounds; i += 1) {
-    const operations = ['+', '-', '*'];
-    const getRandomOperator = operations[Math.floor(Math.random() * operations.length)];
-
-    const number1 = getRandomNumber(1, 25);
-    const number2 = getRandomNumber(1, 25);
-
-    let getRandomOperation;
-
-    const showEquation = `${number1} ${getRandomOperator} ${number2}`;
-    console.log(`Question: ${showEquation}`);
-
-    const askAnswer = readlineSync.question('Your answer: ');
-
-    if (getRandomOperator === '+') {
-      getRandomOperation = `${number1 + number2}`;
-    }
-    if (getRandomOperator === '-') {
-      getRandomOperation = `${number1 - number2}`;
-    }
-    if (getRandomOperator === '*') {
-      getRandomOperation = `${number1 * number2}`;
-    }
-
-    if (askAnswer === getRandomOperation) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${askAnswer}' is wrong answer ;(. Correct answer was '${getRandomOperation}'.`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
+let getRandomOperation;
+const showEquation = (number1, operator, number2) => {
+  if (operator === '+') {
+    getRandomOperation = `${number1 + number2}`;
   }
-  console.log(`Congratulations, ${userName}!`);
+  if (operator === '-') {
+    getRandomOperation = `${number1 - number2}`;
+  }
+  if (operator === '*') {
+    getRandomOperation = `${number1 * number2}`;
+  }
+  return getRandomOperation;
 };
+
+const gameCheck = () => {
+  const number1 = getRandomNumber(1, 25);
+  const number2 = getRandomNumber(1, 25);
+  const getRandomOperator = operations[Math.floor(Math.random() * operations.length)];
+  const getQuestion = `${number1} ${getRandomOperator} ${number2}`;
+  const checkAnswer = showEquation(number1, getRandomOperator, number2);
+  return [getQuestion, checkAnswer];
+};
+
+const calculateIt = () => basement(gameRules, gameCheck);
 
 export default calculateIt;
