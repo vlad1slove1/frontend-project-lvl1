@@ -1,6 +1,6 @@
 const primality = (number) => {
-  for (let j = 2; j < number; j += 1) {
-    if (number % j === 0) return false;
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) return false;
   }
   return number > 1;
 };
