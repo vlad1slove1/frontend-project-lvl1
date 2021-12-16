@@ -1,6 +1,6 @@
-import basement from './index.js';
-import getRandomNumber from './getRandomNumber.js';
-import primality from './checkForPrimality.js';
+import basement from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
+import primality from '../checkForPrimality.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

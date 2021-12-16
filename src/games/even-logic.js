@@ -1,5 +1,5 @@
-import basement from './index.js';
-import getRandomNumber from './getRandomNumber.js';
+import basement from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 

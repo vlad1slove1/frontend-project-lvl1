@@ -1,5 +1,5 @@
-import basement from './index.js';
-import getRandomNumber from './getRandomNumber.js';
+import basement from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const gameRules = 'What number is missing in the progression?';
 

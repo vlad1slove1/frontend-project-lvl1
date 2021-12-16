@@ -1,6 +1,6 @@
-import basement from './index.js';
-import getRandomNumber from './getRandomNumber.js';
-import greatestCommonDivisor from './getGCD.js';
+import basement from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
+import greatestCommonDivisor from '../getGCD.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
