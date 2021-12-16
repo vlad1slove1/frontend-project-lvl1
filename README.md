@@ -4,11 +4,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2774b7de75e9f0a56ef8/maintainability)](https://codeclimate.com/github/vlad1slove1/frontend-project-lvl1/maintainability)
 [![Node CI](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/vlad1slove1/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
-## Description:
+# Description:
 
 The following repository contains several console games that were build to check my first coding skills, that i've learned with first module on **Hexlet Frontend** with **JavaScript**. You can win by successfully answering 3 questions in a row in the selected game.
 
-### Setup:
+# Setup:
 
 ***Before running the games do next actions:***
 
@@ -20,7 +20,7 @@ The following repository contains several console games that were build to check
 - Add and check depencies: enter command line `make install`
 - Run games: enter command line `make *game name*`
 
-#### Game List:
+# Game List:
 
 1. **brain-games** - game with introduction
 2. **brain-even** - check a number for evenness 
@@ -29,7 +29,7 @@ The following repository contains several console games that were build to check
 5. **brain-prime** - check a number for primality
 6. **brain-progression** - calculate and enter missing number from progression
 
-##### Games overwievs:
+# Games overwievs:
 
 **brain-even asciinema**
 [![asciicast](https://asciinema.org/a/452093.svg)](https://asciinema.org/a/452093)
