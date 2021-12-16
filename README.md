@@ -21,23 +21,27 @@ The following repository contains several console games that were build to check
 - Run games: enter command line `make *game name*`
 
 #### Game List:
-```sh
-brain-games - test game with introduction
-brain-even - check a number for evenness 
-brain-calc - calculate simple expressions
-brain-gcd - calculate the greatest common divisor of 2 numbers
-brain-prime - check a number for primality
-brain-progression - calculate and enter missing number from progression
-```
 
-##### Asciinema records:
+`brain-games` - game with introduction
+`brain-even` - check a number for evenness 
+`brain-calc` - calculate simple expressions
+`brain-gcd` - calculate the greatest common divisor of 2 numbers
+`brain-prime` - check a number for primality
+`brain-progression` - calculate and enter missing number from progression
 
-![brain-even asciinema] (https://asciinema.org/a/452093)
+##### Games overwievs:
 
-![brain-calc asciinema] (https://asciinema.org/a/453000)
+**brain-even asciinema**
+[![asciicast](https://asciinema.org/a/452093.svg)](https://asciinema.org/a/452093)
 
-![brain-gcd asciinema] (https://asciinema.org/a/453313)
+**brain-calc asciinema**
+[![asciicast](https://asciinema.org/a/453000.svg)](https://asciinema.org/a/453000)
 
-![brain-progression asciinema] (https://asciinema.org/a/454099)
+**brain-gcd asciinema**
+[![asciicast](https://asciinema.org/a/453313.svg)](https://asciinema.org/a/453313)
 
-![brain-prime asciinema] (https://asciinema.org/a/454409) 
+**brain-progression asciinema**
+[![asciicast](https://asciinema.org/a/454099.svg)](https://asciinema.org/a/454099)
+
+**brain-prime asciinema**
+[![asciicast](https://asciinema.org/a/454409.svg)](https://asciinema.org/a/454409)
