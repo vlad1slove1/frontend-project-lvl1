@@ -22,12 +22,12 @@ The following repository contains several console games that were build to check
 
 #### Game List:
 
-`brain-games` - game with introduction
-`brain-even` - check a number for evenness 
-`brain-calc` - calculate simple expressions
-`brain-gcd` - calculate the greatest common divisor of 2 numbers
-`brain-prime` - check a number for primality
-`brain-progression` - calculate and enter missing number from progression
+1. brain-games - game with introduction
+2. brain-even - check a number for evenness 
+3. brain-calc - calculate simple expressions
+4. brain-gcd - calculate the greatest common divisor of 2 numbers
+5. brain-prime - check a number for primality
+6. brain-progression - calculate and enter missing number from progression
 
 ##### Games overwievs:
 
