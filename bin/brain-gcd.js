@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import getGCD from '../src/brain-gcd-logic/gcd-logic.js';
+import getGCD from '../src/games/gcd-logic.js';
 
 getGCD();
