@@ -3,17 +3,12 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isNumberEven = (number) => {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+const isNumberEven = (number) => number % 2 === 0;
 
 const gameCheck = () => {
   const number = getRandomNumber(1, 100);
   const getQuestion = `${number}`;
-  const checkAnswer = isNumberEven(number);
+  const checkAnswer = isNumberEven(number) ? 'yes' : 'no';
   return [getQuestion, checkAnswer];
 };
 
