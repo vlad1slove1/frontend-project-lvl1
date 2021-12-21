@@ -7,9 +7,9 @@ const isNumberEven = (number) => number % 2 === 0;
 
 const gameCheck = () => {
   const number = getRandomNumber(1, 100);
-  const getQuestion = `${number}`;
+  const question = `${number}`;
   const checkAnswer = isNumberEven(number) ? 'yes' : 'no';
-  return [getQuestion, checkAnswer];
+  return [question, checkAnswer];
 };
 
 const checkEven = () => basement(gameRules, gameCheck);

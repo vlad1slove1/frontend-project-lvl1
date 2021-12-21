@@ -17,9 +17,9 @@ const primality = (number) => {
 
 const gameCheck = () => {
   const number = getRandomNumber(1, 100);
-  const getQuestion = `${number}`;
+  const question = `${number}`;
   const checkAnswer = primality(number) ? 'yes' : 'no';
-  return [getQuestion, checkAnswer];
+  return [question, checkAnswer];
 };
 
 const checkForPrimality = () => basement(gameRules, gameCheck);

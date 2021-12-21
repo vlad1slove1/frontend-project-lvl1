@@ -13,9 +13,9 @@ const greatestCommonDivisor = (num1, num2) => {
 const gameCheck = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const getQuestion = `${number1} ${number2}`;
+  const question = `${number1} ${number2}`;
   const checkAnswer = `${greatestCommonDivisor(number1, number2)}`;
-  return [getQuestion, checkAnswer];
+  return [question, checkAnswer];
 };
 
 const getGCD = () => basement(gameRules, gameCheck);
