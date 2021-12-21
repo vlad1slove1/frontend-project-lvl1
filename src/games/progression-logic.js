@@ -16,20 +16,17 @@ const getMassive = (progressionStart, progressionStep, progressionLength) => {
 const gameCheck = () => {
   const firstNumber = getRandomNumber(1, 100);
   const step = getRandomNumber(2, 10);
-  const getRandomProgressionLength = getRandomNumber(5, 10);
+  const randomProgressionLength = getRandomNumber(5, 10);
 
-  const getProgression = getMassive(firstNumber, step, getRandomProgressionLength);
+  const progression = getMassive(firstNumber, step, randomProgressionLength);
 
-  const getRandomIndexOfMassive = getProgression[getRandomNumber(0, getProgression.length - 1)];
-  const numberToString = `${getRandomIndexOfMassive}`;
+  const randomIndexOfMassive = progression[getRandomNumber(0, progression.length - 1)];
 
-  const hideIndex = getProgression.indexOf(getRandomIndexOfMassive);
-  getProgression[hideIndex] = '..';
-  const str = getProgression.join(' ');
+  const hideIndex = progression.indexOf(randomIndexOfMassive);
+  progression[hideIndex] = '..';
+  const str = progression.join(' ');
 
-  const getQuestion = `${str}`;
-  const checkAnswer = numberToString;
-  return [getQuestion, checkAnswer];
+  return [str, `${randomIndexOfMassive}`];
 };
 
 const getProgression = () => basement(gameRules, gameCheck);
