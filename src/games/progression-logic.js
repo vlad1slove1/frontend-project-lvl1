@@ -1,9 +1,9 @@
-import basement from '../index.js';
+import engine from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const getMassive = (progressionStart, progressionStep, progressionLength) => {
+const generateProgression = (progressionStart, progressionStep, progressionLength) => {
   const massive = [];
   let result;
   for (let i = 0; i <= progressionLength; i += 1) {
@@ -16,19 +16,18 @@ const getMassive = (progressionStart, progressionStep, progressionLength) => {
 const gameCheck = () => {
   const firstNumber = getRandomNumber(1, 100);
   const step = getRandomNumber(2, 10);
-  const randomProgressionLength = getRandomNumber(5, 10);
+  const randomLength = getRandomNumber(5, 10);
 
-  const progression = getMassive(firstNumber, step, randomProgressionLength);
+  const progression = generateProgression(firstNumber, step, randomLength);
+  const randomIndex = getRandomNumber(0, progression.length - 1);
 
-  const randomIndexOfMassive = progression[getRandomNumber(0, progression.length - 1)];
+  const correctAnswer = `${progression[randomIndex]}`;
+  progression[randomIndex] = '..';
+  const question = progression.join(' ');
 
-  const hideIndex = progression.indexOf(randomIndexOfMassive);
-  progression[hideIndex] = '..';
-  const str = progression.join(' ');
-
-  return [str, `${randomIndexOfMassive}`];
+  return [question, correctAnswer];
 };
 
-const getProgression = () => basement(gameRules, gameCheck);
+const getProgression = () => engine(gameRules, gameCheck);
 
 export default getProgression;
