@@ -18,6 +18,6 @@ const gameCheck = () => {
   return [question, correctAnswer];
 };
 
-const getGCD = () => engine(gameRules, gameCheck);
+const gcdGame = () => engine(gameRules, gameCheck);
 
-export default getGCD;
+export default gcdGame;

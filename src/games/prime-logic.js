@@ -22,6 +22,6 @@ const gameCheck = () => {
   return [question, correctAnswer];
 };
 
-const checkForPrimality = () => engine(gameRules, gameCheck);
+const primeGame = () => engine(gameRules, gameCheck);
 
-export default checkForPrimality;
+export default primeGame;

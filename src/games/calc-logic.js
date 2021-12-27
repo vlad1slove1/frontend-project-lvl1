@@ -27,6 +27,6 @@ const gameCheck = () => {
   return [question, correctAnswer];
 };
 
-const calculateIt = () => engine(gameRules, gameCheck);
+const calcGame = () => engine(gameRules, gameCheck);
 
-export default calculateIt;
+export default calcGame;

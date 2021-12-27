@@ -5,9 +5,8 @@ const gameRules = 'What number is missing in the progression?';
 
 const generateProgression = (progressionStart, progressionStep, progressionLength) => {
   const massive = [];
-  let result;
   for (let i = 0; i <= progressionLength; i += 1) {
-    result = progressionStart + (i * progressionStep);
+    const result = progressionStart + (i * progressionStep);
     massive.push(result);
   }
   return massive;
@@ -28,6 +27,6 @@ const gameCheck = () => {
   return [question, correctAnswer];
 };
 
-const getProgression = () => engine(gameRules, gameCheck);
+const progressionGame = () => engine(gameRules, gameCheck);
 
-export default getProgression;
+export default progressionGame;
