@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import checkForPrimality from '../src/games/prime-logic.js';
+import primeGame from '../src/games/prime-logic.js';
 
-checkForPrimality();
+primeGame();
