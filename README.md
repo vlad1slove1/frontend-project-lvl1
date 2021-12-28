@@ -29,7 +29,7 @@ The following repository contains several console games that were build to check
 5. **brain-prime** - check a number for primality
 6. **brain-progression** - calculate and enter missing number from progression
 
-# Games overwievs:
+# Games overviews:
 
 **brain-even asciinema**
 [![asciicast](https://asciinema.org/a/452093.svg)](https://asciinema.org/a/452093)
